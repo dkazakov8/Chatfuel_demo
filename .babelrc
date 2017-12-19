@@ -1,0 +1,52 @@
+{
+  "env": {
+    "development": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "node": "current"
+          }
+        }],
+        "react"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        ["transform-object-rest-spread", { "useBuiltIns": true }],
+        ["module-resolver", {
+          "root": ["."],
+          "alias": {
+            "actions": "./server/database/actions",
+            "models": "./server/database/models",
+            "modules": "./isomorph/modules",
+            "isomorph": "./isomorph",
+            "middlewares": "./server/middlewares"
+          }
+        }]
+      ]
+    },
+    "webpack": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "browsers": ["last 2 versions"]
+          }
+        }],
+        "react"
+      ],
+      "plugins": [
+        "transform-class-properties",
+        ["transform-object-rest-spread", { "useBuiltIns": true }],
+        ["module-resolver", {
+          "root": ["."],
+          "alias": {
+            "actions": "./server/database/actions",
+            "models": "./server/database/models",
+            "modules": "./isomorph/modules",
+            "isomorph": "./isomorph",
+            "middlewares": "./server/middlewares"
+          }
+        }]
+      ]
+    }
+  }
+}

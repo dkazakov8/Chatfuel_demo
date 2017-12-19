@@ -1,0 +1,25 @@
+@import "clear";
+@import "theme";
+@import "Root";
+
+@font-face {
+  font-family: 'Droid Sans';
+  src: url('../fonts/droidsans.woff2') format('woff2'),
+  url('../fonts/droidsans.woff') format('woff'),
+  url('../fonts/droidsans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Droid Sans', Tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 20px;
+  background: darken(@color-grey, 15%);
+  color: @color-grey;
+  height: 100%;
+}

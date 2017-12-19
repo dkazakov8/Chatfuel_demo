@@ -1,0 +1,16 @@
+{
+  "verbose": false,
+  "ext": "js json",
+  "watch": [
+    "/isomorph/",
+    "/config/",
+    "/server/"
+  ],
+  "ignore": [
+    ".git",
+    ".idea",
+    "*.test.js",
+    "/client/",
+    "/dist/"
+  ]
+}

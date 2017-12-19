@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "./eslint/best-practices.yaml",
+    "./eslint/ecmascript-6.yaml",
+    "./eslint/node-js-and-common-js.yaml",
+    "./eslint/possible-errors.yaml",
+    "./eslint/strict-mode.yaml",
+    "./eslint/stylistic-issues.yaml",
+    "./eslint/variables.yaml",
+    "./eslint/import.yaml",
+    "plugin:react/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react",
+    "import",
+    "prettier"
+  ],
+  "globals": {
+    "Promise": true,
+    "logException": true,
+    "shallow": true,
+    "mount": true,
+    "render": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "printWidth": 100,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "semi": true,
+        "trailingComma": "es5",
+        "bracketSpacing": true,
+        "jsxBracketSameLine": false
+      }
+    ],
+    "react/no-find-dom-node": 0,
+    "react/jsx-no-target-blank": 0,
+    "react/no-string-refs": 0
+  }
+}
